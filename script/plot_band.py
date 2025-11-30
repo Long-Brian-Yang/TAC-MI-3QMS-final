@@ -17,9 +17,9 @@ dos = vasp.complete_dos
 # -------------------------------
 gap = bs.get_band_gap()
 print("\n===== Band Gap Information =====")
-print(f"Band gap (eV): {gap['energy']}")
-print(f"Direct?         {gap['direct']}")
-print(f"Transition:      {gap['transition']}")
+print(f"Band gap (eV):  {gap['energy']:.4f}")
+print(f"Direct?         {'Yes' if gap['direct'] else 'No'}")
+print(f"Transition:     {gap['transition']}")
 print("================================\n")
 
 # -------------------------------
